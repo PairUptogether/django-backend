@@ -26,7 +26,7 @@ def index(request):
 
 urlpatterns = [
     path('', index),
-    path('admin/', admin.site.urls),
+    path('/api/admin/', admin.site.urls),
     path('api/', include('api.urls')),
 ]
 
